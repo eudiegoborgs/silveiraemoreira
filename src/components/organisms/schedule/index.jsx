@@ -7,6 +7,7 @@ import { InlineWidget } from "react-calendly"
 
 const style = css`
   background: #333333;
+  padding: 30px 0;
   .container {
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,12 @@ const style = css`
       font-weight: 300;
       line-height: 2.2em;
       letter-spacing: -0.1px;
+    }
+    .calendly-inline-widget {
+      max-height: 500px;
+      [data-id="branding"] {
+        display: none;
+      }
     }
   }
 
@@ -52,7 +59,7 @@ const Schedule = props => (
         <div className="left">
           <InlineWidget 
             url="https://calendly.com/silveiraemoreira-advocacia/reuniao" 
-            style={{maxWidth: '100%', height: '300px'}}
+            style={{maxWidth: '100%', height: '200px'}}
             pageSettings={{
               backgroundColor: '333333',
               hideEventTypeDetails: true,
