@@ -1,9 +1,10 @@
-import React from 'react';
-import banner from '../../images/banner.jpeg';
-import { css } from 'emotion';
-import SocialMenu from '../molecules/social-menu';
-import Content from './content';
-import Button from '../atoms/button';
+import React from 'react'
+import { css } from 'emotion'
+import {Link} from 'react-scroll'
+import banner from '../../images/banner.jpeg'
+import SocialMenu from '../molecules/social-menu'
+import Content from './content'
+import Button from '../atoms/button'
 
 const style = css`
   background-color: #333;
@@ -48,6 +49,22 @@ const style = css`
     }
   }
 
+  .special {
+    background-color: #3c3c3c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: solid 2px #3c3c3c;
+    border-radius: 50px 50px 50px 50px;
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 700;
+    :hover {
+      cursor: pointer;
+      background: transparent;
+      color: #3c3c3c !important;
+    }
+  }
+
   @media (max-width: 780px) {
     .caption {
       padding: 15px 30px;
@@ -75,9 +92,9 @@ const Banner = () => (
           <em>Somos qualificados em várias areas do direito. Trabalhamos com pessoas, para pessoas e com total respeito à lei. Entre em contato para maiores detalhes!</em>
         </span>
         <div className="button-box">
-          <Button>
-            Agende uma consulta
-          </Button>
+          <Link to="schedule" className="menu-item special" spy={true} smooth={true} delay={500} offset={1}>
+            <i className="fa fa-clock-o"/> Agende um horario
+          </Link>
         </div>
       </div>
     </div>
