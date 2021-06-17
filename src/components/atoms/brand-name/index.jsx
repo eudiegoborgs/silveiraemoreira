@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from 'emotion'
-import Typewriter from "typewriter-effect"
 import { StaticQuery, graphql, Link } from "gatsby"
 
 const style = css`

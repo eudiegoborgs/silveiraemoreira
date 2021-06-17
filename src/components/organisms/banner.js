@@ -3,7 +3,6 @@ import banner from '../../images/banner.jpeg';
 import { css } from 'emotion';
 import SocialMenu from '../molecules/social-menu';
 import Content from './content';
-import TypeWritter from '../atoms/typewritter';
 import Button from '../atoms/button';
 
 const style = css`
