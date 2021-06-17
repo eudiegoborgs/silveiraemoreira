@@ -30,7 +30,7 @@ const style = css `
   @media (max-width: 780px) {
     display: block;
     .item {
-      width: 100%;
+      width: inherit;
     }
   }
 `;

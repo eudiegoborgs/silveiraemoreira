@@ -63,7 +63,7 @@ const style = css `
       position: absolute;
       left: 0;
       width: 100vw;
-      height: 100vh;
+      height: 500px;
       background: #ffffff;
       padding: 1rem 1.0875rem;
       .menu-item {

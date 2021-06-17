@@ -9,14 +9,16 @@ import Button from '../atoms/button'
 const style = css`
   background-color: #333;
   background-image: url(${banner});
-  background-size: cover;
+  background-size: 120%;
+  ${'' /* background-size: cover; */}
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: top center;
   color: #ffffff;
   overflow: hidden;
 
   .caption {
-    height: 60vh;
+    height: 450px;
     color: #333333;
     display: flex;
     max-width: 960px;
@@ -66,6 +68,7 @@ const style = css`
   }
 
   @media (max-width: 780px) {
+    background-size: 300%;
     .caption {
       padding: 15px 30px;
       >div {
