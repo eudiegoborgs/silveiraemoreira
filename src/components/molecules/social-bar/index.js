@@ -9,10 +9,10 @@ const style = css`
     display: none;
   }
 
-  .container {
+  .container-social {
     margin: 0 auto;
     max-width: 960px;
-    padding: 0.35rem 1.0875rem;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -53,7 +53,7 @@ const style = css`
 
 const SocialBar = () => (
   <section className={style}>
-    <div className="container">
+    <div className="container-social">
       <div className="left">
         <ul>
           <li>
