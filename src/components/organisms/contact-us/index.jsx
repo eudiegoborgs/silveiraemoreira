@@ -34,7 +34,7 @@ const style = css `
       border: solid 1px #333333;
       padding: 5px 10px;
       background-color: #fff;
-      color: white;
+      color: #333;
     }
     .submit {
       text-align: right;

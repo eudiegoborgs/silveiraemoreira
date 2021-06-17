@@ -3,7 +3,6 @@ import { css } from 'emotion'
 import Layout from "../components/themes/layout"
 import SEO from "../components/organisms/seo"
 import Content from "../components/organisms/content"
-import BlogResume from "../components/organisms/blog-resume"
 
 const style = css `
   text-align: center;
@@ -30,7 +29,6 @@ const NotFoundPage = () => (
           Você pode não ter encontrado o que queria, mas tenho alguns posts que podem ser bem interessantes para você.
         </p>
       </main>
-      <BlogResume />
     </Content>
   </Layout>
 )

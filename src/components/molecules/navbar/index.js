@@ -106,19 +106,19 @@ const Navbar = () => {
   return (
     <div className={style}>
       <div className={`menu ${Open && 'active'}`}>
-        <Link activeClass="active" to="home" className="menu-item" spy={true} smooth={true}>
+        <Link activeClass="active" to="home" className="menu-item" spy={true} smooth={true} delay={500} offset={1}>
           Início
         </Link>
-        <Link to="ourvalues" className="menu-item" spy={true} smooth={true}>
+        <Link to="ourvalues" className="menu-item" spy={true} smooth={true} delay={500} offset={1}>
           Sobre nós
         </Link>
-        <Link to="praticeareas" className="menu-item" spy={true} smooth={true}>
+        <Link to="praticeareas" className="menu-item" spy={true} smooth={true} delay={500} offset={1}>
           Areas de atuação
         </Link>
-        <Link to="contactus" className="menu-item" spy={true} smooth={true}>
+        <Link to="contactus" className="menu-item" spy={true} smooth={true} delay={500} offset={1}>
           Contato
         </Link>
-        <Link to="schedule" className="menu-item special" spy={true} smooth={true}>
+        <Link to="schedule" className="menu-item special" spy={true} smooth={true} delay={500} offset={1}>
           <i className="fa fa-clock-o"/> Agende um horario
         </Link>
         <div className="social-menu">
