@@ -25,10 +25,10 @@ const style = css`
       letter-spacing: -0.1px;
     }
     .calendly-inline-widget {
-      max-height: 500px;
+      ${'' /* max-height: 500px;
       [data-id="branding"] {
         display: none;
-      }
+      } */}
     }
   }
 
