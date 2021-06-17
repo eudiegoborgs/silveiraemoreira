@@ -12,6 +12,7 @@ const style = css `
   background-attachment: fixed;
   color: #bebebe;
   padding-bottom: 20px;
+  padding: 30px 0;
 
   .center {
     display: flex;
